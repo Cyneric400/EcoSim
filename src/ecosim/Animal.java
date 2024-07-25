@@ -8,7 +8,7 @@ public abstract class Animal extends Entity {
 		super(x, y);
 		this.age = 0;
 	}
-	
+
 	// Abstract methods for all Animals
 	public abstract void eat();
 	public abstract void move();

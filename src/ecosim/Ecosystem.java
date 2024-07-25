@@ -22,6 +22,7 @@ public class Ecosystem {
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++) {
 				currentCoords.setCoords(i, j);
+				// Loop through the creatures array
 				for (int k = 0; k < creatures.length; k++) {
 					if (creatures[k].getCoords().equals(currentCoords)) {
 						mapObj[i][j] = creatures[k];

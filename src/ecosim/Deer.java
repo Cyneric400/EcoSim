@@ -9,7 +9,6 @@ public class Deer extends Animal {
 		super(x, y);
 	}
 	
-	
 	@Override
 	public void live() {
 		super.age++;
@@ -32,9 +31,9 @@ public class Deer extends Animal {
 	}
 	
 	
-	private Sight lookAt(Point p) {
+	/*private Sight lookAt(Point p) {
 		return Sight.NOTHING;
-	}
+	}*/
 	
 	@Override
 	public void move() {
