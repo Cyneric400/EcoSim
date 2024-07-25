@@ -1,7 +1,8 @@
 package ecosim;
 
 public class Deer extends Animal {
-	
+
+	// Should this be an abstract thing?
 	private String foodSource = "Grass";
 	
 	public Deer(int x, int y) {

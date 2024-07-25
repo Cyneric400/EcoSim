@@ -3,13 +3,22 @@ package ecosim;
 import java.util.Arrays;
 
 public class Ecosystem {
-	private int size;
+	private final int size;
 	private Entity[][] map;
-	
+
+	/***
+	 * Called by the Ecosystem constructor to create the this.map variable.
+	 * @param size
+	 * @param creatures
+	 * @return an Entity[][] with the creatures contained in it.
+	 */
 	private Entity[][] buildMap(int size, Entity[] creatures) {
 		boolean addedCreature = false;
+		// Set up a coordinates variable
 		Point currentCoords = new Point(0, 0);
+		// Create a map object
 		Entity[][] mapObj = new Entity[size][size];
+		// Loop through the map
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++) {
 				currentCoords.setCoords(i, j);
